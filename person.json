@@ -1,0 +1,10 @@
+{
+    "name": "Light",
+    "age": 23,
+    "city": "New Delhi",
+    "haschildren": false,
+    "occupation": [
+        "Software Engineer",
+        "Programmer"
+    ]
+}

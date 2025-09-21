@@ -1,0 +1,20 @@
+{
+    "first name": "Swayam",
+    "last name": "Gupta",
+    "age": 34,
+    "hobbies": ["coding", "reading", "travelling"],
+    "haschildren": true,
+    "children": [
+        {
+            "first name": "Suyash",
+            "age": 17,
+            "relationship": "son"
+        },
+        {
+            "first name": "Rounakwa",
+            "age": 15,
+            "relationship": "daughter"
+        }
+    ],
+    "occupation": "Software Engineer"
+}
