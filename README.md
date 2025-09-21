@@ -1,5 +1,14 @@
 # JSON in Python
 
+## Python ↔ JSON Data Type Conversion
+
+The following table shows how Python data types are converted to their JSON equivalents during serialization and deserialization:
+
+<img width="377" height="330" alt="image" src="https://github.com/user-attachments/assets/f3d0683a-f458-4f62-ad61-26988c235452" />
+
+remember this table. <br><br>
+
+<hr>
 This repository contains small examples demonstrating how to work with JSON in Python:
 
 - `json_and_pythonObj.py`: How to serialize (encode) Python built-in types to JSON and deserialize (decode) JSON into Python built-ins using `json.dumps`, `json.dump`, `json.loads`, and `json.load`.
@@ -41,11 +50,11 @@ This repository contains small examples demonstrating how to work with JSON in P
 
     - One thing I ran into while writing these examples: if you name a script after a standard library module (for example `json.py`, `os.py`, `sys.py`, `requests.py`), Python will import your local file first and shadow the real module. That can lead to confusing errors like `AttributeError: module 'json' has no attribute 'dumps'`, `RecursionError`, or other import failures, I hit this while developing the examples, so watch out for it.
 
-- How to fix
-    - Don’t name your script `json.py` (or any other stdlib/module name). Use something like `json_example.py` instead.
-    - Remove cached bytecode: delete the `__pycache__` folder and any `*.pyc` files.
-    - Restart your Python interpreter or editor/IDE so the old module is not still loaded.
-    - Check the current working directory for accidentally named files, Python resolves imports from there first.
+    - How to fix
+        - Don’t name your script `json.py` (or any other stdlib/module name). Use something like `json_example.py` instead.
+        - Remove cached bytecode: delete the `__pycache__` folder and any `*.pyc` files.
+        - Restart your Python interpreter or editor/IDE so the old module is not still loaded.
+        - Check the current working directory for accidentally named files, Python resolves imports from there first.
 
 ## Files and How to Run
 
